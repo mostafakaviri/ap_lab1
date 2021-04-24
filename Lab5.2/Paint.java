@@ -55,16 +55,12 @@ public class Paint {
 
     public void describeEqualSides(){
         for (Shape shape1 : shapes){
-            if (shape1 instanceof Triangle){
-                if (((Triangle) shape1).isEqualSides()){
+            if (shape1 instanceof Polygon){
+                if (((Polygon) shape1).isEqualSides()){
                     System.out.println(shape1.toString());
                 }
             }
-            if (shape1 instanceof Rectangle){
-                if (((Rectangle) shape1).isEqualSides()){
-                    System.out.println(shape1.toString());
-                }
-            }
+
         }
     }
 
