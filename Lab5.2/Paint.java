@@ -22,7 +22,7 @@ public class Paint {
 
     public void printAll(){
         for (Shape shape1 : shapes){
-            shape1.toString();
+            System.out.println(shape1.toString());
         }
     }
 
