@@ -22,11 +22,9 @@ public class Triangle extends Polygon{
      * @return true.
      */
 
-    public boolean isEquilateral(){
-        if (getSides().get(0).equals(getSides().get(1)) && getSides().get(0).equals(getSides().get(2))){
-            return true;
-        }
-        return false;
+    @Override
+    public boolean isEqualSides() {
+        return super.isEqualSides();
     }
 
     /**
@@ -62,26 +60,19 @@ public class Triangle extends Polygon{
 
     @Override
     public double getPerimeter() {
-        double res = 0;
-        for (Double i : getSides()){
-            res += i;
-        }
-        return res;
+        return super.getPerimeter();
     }
 
     /**
      * check if equal
-     * @param triangle for check
+     * @param polygon for check
      * @return true if equal.
      */
 
 
-    public boolean equals(Triangle triangle){
-
-        if (getSides().get(0).equals(triangle.getSides().get(0)) && getSides().get(1).equals(triangle.getSides().get(1)) && getSides().get(2).equals(triangle.getSides().get(2))){
-            return true;
-        }
-        return false;
+    @Override
+    public boolean equals(Polygon polygon) {
+        return super.equals(polygon);
     }
 
     /**

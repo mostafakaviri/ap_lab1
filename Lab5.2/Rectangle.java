@@ -17,11 +17,9 @@ public class Rectangle extends Polygon{
      * @return true.
      */
 
-    public boolean isSquare(){
-        if (getSides().get(0).equals(getSides().get(1))){
-            return true;
-        }
-        return false;
+    @Override
+    public boolean isEqualSides() {
+        return super.isEqualSides();
     }
 
     /**
@@ -55,24 +53,18 @@ public class Rectangle extends Polygon{
 
     @Override
     public double getPerimeter() {
-        double res = 0;
-        for (Double i : getSides()){
-            res += i;
-        }
-        return res;
+        return super.getPerimeter();
     }
 
     /**
      * check if equal
-     * @param rectangle for check
+     * @param polygon for check
      * @return true if equal.
      */
 
-    public boolean equals(Rectangle rectangle){
-        if ( (rectangle.getSides().get(0).equals(getSides().get(0)) && rectangle.getSides().get(1).equals(getSides().get(1))) || ((rectangle.getSides().get(0).equals(getSides().get(1)) && rectangle.getSides().get(1).equals(getSides().get(0))))){
-            return true;
-        }
-        return false;
+    @Override
+    public boolean equals(Polygon polygon) {
+        return super.equals(polygon);
     }
 
     /**
