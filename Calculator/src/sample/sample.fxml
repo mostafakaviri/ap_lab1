@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="348.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <MenuBar prefHeight="32.0" prefWidth="312.0" VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="New" />
+                        <MenuItem mnemonicParsing="false" text="Open…" />
+                        <Menu mnemonicParsing="false" text="Open Recent" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                        <MenuItem mnemonicParsing="false" text="Save" />
+                        <MenuItem mnemonicParsing="false" text="Save As…" />
+                        <MenuItem mnemonicParsing="false" text="Revert" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Preferences…" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Quit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo" />
+                        <MenuItem mnemonicParsing="false" text="Redo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Cut" />
+                        <MenuItem mnemonicParsing="false" text="Copy" />
+                        <MenuItem mnemonicParsing="false" text="Paste" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Select All" />
+                        <MenuItem mnemonicParsing="false" text="Unselect All" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="318.0" prefWidth="284.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="one" layoutX="16.0" layoutY="206.0" mnemonicParsing="false" onAction="#getOne" prefHeight="48.0" prefWidth="57.0" text="1" />
+                <Button fx:id="two" layoutX="71.0" layoutY="206.0" mnemonicParsing="false" onAction="#getTwo" prefHeight="48.0" prefWidth="57.0" text="2" />
+                <Button fx:id="power" layoutX="128.0" layoutY="254.0" mnemonicParsing="false" onAction="#power" prefHeight="48.0" prefWidth="57.0" text="^" />
+                <Button fx:id="dot" layoutX="16.0" layoutY="254.0" mnemonicParsing="false" onAction="#addDot" prefHeight="48.0" prefWidth="57.0" text="-" />
+                <Button fx:id="zero" layoutX="71.0" layoutY="254.0" mnemonicParsing="false" onAction="#getZero" prefHeight="48.0" prefWidth="57.0" text="0" />
+                <Button fx:id="calculate" layoutX="183.0" layoutY="206.0" mnemonicParsing="false" onAction="#calculateButtonPressed" prefHeight="96.0" prefWidth="57.0" text="=" textFill="#eb4808" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="206.0" />
+                <Button fx:id="five" layoutX="73.0" layoutY="158.0" mnemonicParsing="false" onAction="#getFive" prefHeight="48.0" prefWidth="57.0" text="5" />
+                <Button fx:id="sum" layoutX="183.0" layoutY="158.0" mnemonicParsing="false" onAction="#sum" prefHeight="48.0" prefWidth="57.0" text="+" />
+                <Button fx:id="six" layoutX="128.0" layoutY="158.0" mnemonicParsing="false" onAction="#getSix" prefHeight="48.0" prefWidth="57.0" text="6" />
+                <Button fx:id="three" layoutX="128.0" layoutY="206.0" mnemonicParsing="false" onAction="#getThree" prefHeight="48.0" prefWidth="57.0" text="3" />
+                <Button fx:id="sine" layoutX="16.0" layoutY="62.0" mnemonicParsing="false" onAction="#sine" prefHeight="48.0" prefWidth="57.0" text="sin" />
+                <Button fx:id="four" layoutX="16.0" layoutY="158.0" mnemonicParsing="false" onAction="#getFour" prefHeight="48.0" prefWidth="57.0" text="4" />
+                <Button fx:id="multiply" layoutX="183.0" layoutY="110.0" mnemonicParsing="false" onAction="#multiply" prefHeight="48.0" prefWidth="57.0" text="*" />
+                <Button fx:id="eight" layoutX="71.0" layoutY="110.0" mnemonicParsing="false" onAction="#getEight" prefHeight="48.0" prefWidth="57.0" text="8" />
+                <Button fx:id="seven" layoutX="16.0" layoutY="110.0" mnemonicParsing="false" onAction="#getSeven" prefHeight="48.0" prefWidth="57.0" text="7" />
+                <Button fx:id="nine" layoutX="128.0" layoutY="110.0" mnemonicParsing="false" onAction="#getNine" prefHeight="48.0" prefWidth="57.0" text="9" />
+                <Button fx:id="cosine" layoutX="73.0" layoutY="62.0" mnemonicParsing="false" onAction="#cosine" prefHeight="48.0" prefWidth="57.0" text="cos" />
+                <Button fx:id="tangant" layoutX="128.0" layoutY="62.0" mnemonicParsing="false" onAction="#tangant" prefHeight="48.0" prefWidth="57.0" text="tan" />
+                <Button fx:id="submission" layoutX="183.0" layoutY="62.0" mnemonicParsing="false" onAction="#submission" prefHeight="48.0" prefWidth="57.0" text="/" />
+                <Button fx:id="reset" layoutX="183.0" layoutY="14.0" mnemonicParsing="false" onAction="#reset" prefHeight="48.0" prefWidth="57.0" text="AC" />
+                <TextField fx:id="textField" editable="false" focusTraversable="false" layoutX="16.0" layoutY="14.0" prefHeight="48.0" prefWidth="168.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
